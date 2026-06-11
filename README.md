@@ -119,15 +119,29 @@ Potential next steps include:
 - Deployment to cloud infrastructure
 
 ---
+![Dashboard](screenshots/dashboard.png)
+## Tools Used
+
+- Python
+- Pandas
+- Scikit-Learn
+- Streamlit
+- Matplotlib
+
 
 ## Project Structure
 
-```text
-lead-prioritization-agent/
+AI-Lead-Prioritization-Agent
 │
 ├── app/
 ├── data/
+│   ├── bank-full.csv
+│   └── top_leads.csv
 ├── notebooks/
 │   └── 01_eda.ipynb
+├── screenshots/
+│   └── dashboard.png
+├── app.py
 ├── README.md
 └── requirements.txt
+---
