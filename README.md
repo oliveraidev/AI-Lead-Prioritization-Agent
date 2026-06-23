@@ -59,7 +59,7 @@ The system translates predictions into business actions:
 - Priority level (High / Medium / Low)
 - Explanation of prediction
 - Recommended next action
-- Manager ready summary
+- Manager-ready summary
 
 ---
 
@@ -72,7 +72,7 @@ A Streamlit dashboard provides:
 - Priority levels
 - Key insights
 
-The dashboard is designed for operational sales usage and allows teams to quickly identify high priority leads under limited outreach capacity.
+The dashboard is designed for operational sales usage and allows teams to quickly identify high-priority leads under limited outreach capacity.
 
 ---
 
@@ -99,6 +99,8 @@ The dashboard is designed for operational sales usage and allows teams to quickl
 - Scikit-Learn
 - Streamlit
 - Matplotlib
+
+---
 
 ## Key Insights
 
@@ -130,8 +132,8 @@ The Random Forest slightly outperformed Logistic Regression in ROC AUC performan
 Potential next steps include:
 
 - Hyperparameter tuning
-- Cross validation
-- SHAP based explainability
+- Cross-validation
+- SHAP-based explainability
 - Real-time lead scoring API
 - Cloud deployment
 
