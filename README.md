@@ -1,6 +1,7 @@
 # AI-Powered Lead Prioritization Agent
 
 ## Overview
+
 This project builds a machine learning based system that helps sales and marketing teams decide which leads to contact first under limited call capacity.
 
 The system predicts the probability that a customer will subscribe to a term deposit and translates this into actionable recommendations using a machine learning driven decision layer.
@@ -8,14 +9,17 @@ The system predicts the probability that a customer will subscribe to a term dep
 ---
 
 ## Business Problem
+
 Sales teams cannot contact every potential customer. This project helps prioritize leads by identifying those with the highest likelihood of conversion.
 
 ---
 
 ## Data
+
 The project uses the publicly available Bank Marketing Dataset from the UCI Machine Learning Repository.
 
 Target variable:
+
 - `y` → whether the client subscribed (yes/no)
 
 ---
@@ -23,11 +27,13 @@ Target variable:
 ## Approach
 
 ### 1. Data Preparation
+
 - Removed leakage variable (`duration`)
 - Encoded categorical variables
 - Split into training and test sets
 
 ### 2. Modeling
+
 - Logistic Regression (baseline)
 - Random Forest (performance comparison)
 - Evaluation using ROC AUC
@@ -35,18 +41,21 @@ Target variable:
 ### Model Performance
 
 | Model | Accuracy | ROC AUC |
-|---|---:|---:|
+|---------|---------:|---------:|
 | Logistic Regression | 0.89 | 0.76 |
 | Random Forest | 0.89 | 0.78 |
 
 The Random Forest model achieved slightly better ranking performance and captured more complex relationships in the data.
 
 ### 3. Lead Scoring
+
 - Each customer receives a conversion probability
 - Leads are ranked based on predicted likelihood
 
 ### 4. Agent Layer
+
 The system translates predictions into business actions:
+
 - Priority level (High / Medium / Low)
 - Explanation of prediction
 - Recommended next action
@@ -55,7 +64,9 @@ The system translates predictions into business actions:
 ---
 
 ## Dashboard
-A simple interface (Streamlit) shows:
+
+A simple Streamlit interface shows:
+
 - Top leads
 - Conversion probabilities
 - Priority levels
@@ -66,6 +77,7 @@ The dashboard is designed for operational sales usage and allows teams to quickl
 ---
 
 ## Business Value
+
 - Reduces wasted calls
 - Improves conversion efficiency
 - Supports better allocation of sales resources
@@ -73,6 +85,7 @@ The dashboard is designed for operational sales usage and allows teams to quickl
 ---
 
 ## Limitations
+
 - Model predictions are probabilistic, not certain
 - Should support decision making, not replace it
 - Potential bias in historical data
@@ -80,25 +93,30 @@ The dashboard is designed for operational sales usage and allows teams to quickl
 ---
 
 ## Tech Stack
+
 - Python
-- pandas
-- scikit-learn
-- matplotlib
+- Pandas
+- Scikit-Learn
 - Streamlit
+- Matplotlib
 
 ---
 
 ## Key Insights
 
 ### Logistic Regression
+
 The logistic regression model highlighted interpretable drivers of conversion probability such as:
+
 - Previous campaign success
 - Contact month
 - Education level
 - Marital status
 
 ### Random Forest
-The Random Forest model identified additional non linear patterns and ranked the following features as most important:
+
+The Random Forest model identified additional non-linear patterns and ranked the following features as most important:
+
 - Account balance
 - Age
 - Contact day
@@ -112,22 +130,20 @@ The Random Forest slightly outperformed Logistic Regression in ROC AUC performan
 ## Future Improvements
 
 Potential next steps include:
+
 - Hyperparameter tuning
 - Cross-validation
-- SHAP based explainability
-- Real time lead scoring API
+- SHAP-based explainability
+- Real-time lead scoring API
 - Deployment to cloud infrastructure
 
 ---
+
+## Dashboard Screenshot
+
 ![Dashboard](screenshots/dashboard.png)
-## Tools Used
 
-- Python
-- Pandas
-- Scikit-Learn
-- Streamlit
-- Matplotlib
-
+---
 
 ## Project Structure
 
@@ -145,3 +161,32 @@ AI-Lead-Prioritization-Agent/
 ├── README.md
 └── requirements.txt
 ```
+
+---
+
+## Project Purpose
+
+This project demonstrates skills in:
+
+- Machine Learning
+- Predictive Analytics
+- Business Intelligence
+- Lead Scoring
+- Data Visualization
+- Decision Support Systems
+
+---
+
+## Author
+
+**Oliver de Bruin**
+
+Bachelor International Business Administration
+
+Areas of interest:
+
+- Business Intelligence
+- Data Analytics
+- Artificial Intelligence
+- Strategy
+- Automotive Industry
