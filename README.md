@@ -4,7 +4,7 @@
 
 This project builds a machine learning based system that helps sales and marketing teams decide which leads to contact first under limited call capacity.
 
-The system predicts the probability that a customer will subscribe to a term deposit and translates this into actionable recommendations using a machine learning driven decision layer.
+The system predicts the probability that a customer will subscribe to a term deposit and translates these predictions into actionable recommendations through a machine learning driven decision layer.
 
 ---
 
@@ -34,7 +34,7 @@ Target variable:
 
 ### 2. Modeling
 
-- Logistic Regression (baseline)
+- Logistic Regression (baseline model)
 - Random Forest (performance comparison)
 - Evaluation using ROC AUC
 
@@ -50,7 +50,7 @@ The Random Forest model achieved slightly better ranking performance and capture
 ### 3. Lead Scoring
 
 - Each customer receives a conversion probability
-- Leads are ranked based on predicted likelihood
+- Leads are ranked according to predicted likelihood
 
 ### 4. Agent Layer
 
@@ -59,13 +59,13 @@ The system translates predictions into business actions:
 - Priority level (High / Medium / Low)
 - Explanation of prediction
 - Recommended next action
-- Manager-ready summary
+- Manager ready summary
 
 ---
 
 ## Dashboard
 
-A simple Streamlit interface shows:
+A Streamlit dashboard provides:
 
 - Top leads
 - Conversion probabilities
@@ -86,9 +86,9 @@ The dashboard is designed for operational sales usage and allows teams to quickl
 
 ## Limitations
 
-- Model predictions are probabilistic, not certain
-- Should support decision making, not replace it
-- Potential bias in historical data
+- Model predictions are probabilistic rather than certain
+- The model should support decision making, not replace it
+- Historical data may contain bias
 
 ---
 
@@ -100,13 +100,11 @@ The dashboard is designed for operational sales usage and allows teams to quickl
 - Streamlit
 - Matplotlib
 
----
-
 ## Key Insights
 
 ### Logistic Regression
 
-The logistic regression model highlighted interpretable drivers of conversion probability such as:
+The Logistic Regression model highlighted interpretable drivers of conversion probability such as:
 
 - Previous campaign success
 - Contact month
@@ -115,7 +113,7 @@ The logistic regression model highlighted interpretable drivers of conversion pr
 
 ### Random Forest
 
-The Random Forest model identified additional non-linear patterns and ranked the following features as most important:
+The Random Forest model identified additional non-linear patterns and ranked the following variables as most important:
 
 - Account balance
 - Age
@@ -132,10 +130,10 @@ The Random Forest slightly outperformed Logistic Regression in ROC AUC performan
 Potential next steps include:
 
 - Hyperparameter tuning
-- Cross-validation
-- SHAP-based explainability
+- Cross validation
+- SHAP based explainability
 - Real-time lead scoring API
-- Deployment to cloud infrastructure
+- Cloud deployment
 
 ---
 
