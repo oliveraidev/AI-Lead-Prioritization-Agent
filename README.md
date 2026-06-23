@@ -35,7 +35,7 @@ Target variable:
 ### Model Performance
 
 | Model | Accuracy | ROC AUC |
-|---|---|---|
+|---|---:|---:|
 | Logistic Regression | 0.89 | 0.76 |
 | Random Forest | 0.89 | 0.78 |
 
@@ -131,8 +131,8 @@ Potential next steps include:
 
 ## Project Structure
 
-AI-Lead-Prioritization-Agent
-│
+```text
+AI-Lead-Prioritization-Agent/
 ├── app/
 ├── data/
 │   ├── bank-full.csv
@@ -141,7 +141,7 @@ AI-Lead-Prioritization-Agent
 │   └── 01_eda.ipynb
 ├── screenshots/
 │   └── dashboard.png
-├── app.py
+├── src/
 ├── README.md
 └── requirements.txt
----
+```
