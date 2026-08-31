@@ -161,7 +161,13 @@ AI-Lead-Prioritization-Agent/
 ├── README.md
 └── requirements.txt
 ```
+## Quick Start
 
+```bash
+git clone https://github.com/oliveraidev/AI-Lead-Prioritization-Agent.git
+cd AI-Lead-Prioritization-Agent
+python -m pip install -r requirements.txt
+python -m streamlit run app/app.py
 ---
 
 ## Project Purpose
