@@ -166,8 +166,8 @@ AI-Lead-Prioritization-Agent/
 ```bash
 git clone https://github.com/oliveraidev/AI-Lead-Prioritization-Agent.git
 cd AI-Lead-Prioritization-Agent
-python -m pip install -r requirements.txt
-python -m streamlit run app/app.py
+python3 -m pip install -r requirements.txt
+python3 -m streamlit run app/app.py
 ---
 
 ## Project Purpose
